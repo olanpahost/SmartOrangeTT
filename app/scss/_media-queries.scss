@@ -1,0 +1,44 @@
+@media (max-width: 810px) {
+  .main__h2{
+    font-size: 6vmax;
+  }
+  .main__h3{
+    font-size: 3vmax;
+  }
+  .button{
+    width:40vmax;
+    height:10vmax;
+    padding:1vmax;
+    font-size: 4vmax;
+  }
+  .team__members{
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .contacts{
+    padding-left: 5px;
+  }
+}
+
+@media (max-width: 500px) {
+  .section__text{
+    width:80%;
+  }
+  .contacts__form{
+    width:90%;
+    justify-content: center;
+  }
+  .contacts__form__input{
+    width:95%;
+  }
+}
+
+@media (max-aspect-ratio: 1400/933) {
+  .slide{
+    text-align: center;
+  }
+  .slide__img{
+    width:auto;
+    height:100vh;
+  }
+}

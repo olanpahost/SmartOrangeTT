@@ -1,0 +1,24 @@
+.pop{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position:fixed;
+  width:100vw;
+  height:100vh;
+  z-index: 100;
+  background-color: rgba(0,0,0,0.8);
+}
+.container{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width:80%;
+  height:80vh;
+  text-align: center;
+  background: rgba(50,50,50,0.8);
+  border:1px solid $fb;
+  animation: popup 200ms;
+  .button{
+    animation:button 300ms;
+  }
+}

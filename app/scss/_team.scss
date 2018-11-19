@@ -1,0 +1,118 @@
+.team {
+  width: 100%;
+  position: relative;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding:100px 10px 95px;
+}
+
+.section__h3 {
+  font: 60px 'Brandon Grotesque Light';
+  line-height: 0.9em;
+}
+.section__text{
+  max-width:600px;
+  margin:0 auto;
+  color:#ebebeb;
+  letter-spacing: -0.5px;
+}
+
+
+.section__subtitle {
+  font: 22px 'Brandon Grotesque Regular';
+  letter-spacing: -0.5px;
+  color:#777;
+  margin-top: 10px;
+}
+
+.team__members {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 75px 0 50px;
+}
+
+.team__member {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 0 22px 0;
+}
+
+.photo {
+  width: 220px;
+  height: 220px;
+  border: 7px solid white;
+  border-radius: 50%;
+  margin-bottom: 18px;
+}
+
+.text-20 {
+  font: 20px "Brandon Grotesque Regular";
+  line-height: 2em;
+}
+
+.team__social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.social-round {
+  position: relative;
+  margin:10px 5px;
+  background: transparent;
+  width: 37px;
+  height: 37px;
+  border: 4px solid rgba(255, 255, 255, 1);
+  border-radius: 50%;
+  transition: border-color 250ms, background 250ms;
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25px;
+    height: 25px;
+    fill: white;
+  }
+  &:hover {
+    border-color: rgba(255, 255, 255, 0);
+    background: rgba(0, 132, 237, 1);
+  }
+  &.fb{
+    &:hover{
+      border-color: #3b5998;
+      background: #3b5998;
+    }
+  }
+  &.goo {
+    svg {
+      width: 30px;
+      height: 30px;
+    }
+      &:hover {
+        border-color: rgba(217, 82, 50, 1);
+        background: rgba(217, 82, 50, 1);
+      }
+  }
+  &.pint{
+    svg {
+      width: 30px;
+      height: 30px;
+
+    }
+    &:hover{
+      border-color: #cb2028;
+      background: #cb2028;
+    }
+  }
+}
+.bold {
+  font-family: 'Brandon Grotesque Bold', sans-serif;
+}

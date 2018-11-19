@@ -1,0 +1,13 @@
+@import 'reset';
+@import 'font';
+@import 'var';
+.wrapper{
+  width:100%;
+  overflow:hidden;
+}
+@import 'main';
+@import 'team';
+@import 'contacts';
+@import 'pop';
+@import 'media-queries';
+

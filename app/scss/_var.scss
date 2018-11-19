@@ -1,0 +1,12 @@
+$fb: rgba(59,89,152,1);
+$transTime: 500ms;
+@keyframes popup{
+  0%{opacity:0; width:25%; height:25%;}
+  50% {opacity:0; width:50%;  height:50%;}
+  100% {opacity:1; width:80%; height:80vh;}
+}
+@keyframes button{
+  0%{opacity:0;}
+  50% {opacity:0; }
+  100% {opacity:1; }
+}

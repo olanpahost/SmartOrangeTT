@@ -1,0 +1,130 @@
+.contacts, .footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: #7690c5;
+  color: white;
+  padding: 100px 0;
+}
+
+.contacts {
+  min-height: 360px;
+  .section__subtitle {
+    margin-top: 15px;
+  }
+}
+
+.footer {
+  height: 50px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-18 {
+  font: 18px "Brandon Grotesque Regular";
+}
+
+.input-heigh {
+  height: 210px;
+}
+
+.contacts__social, .contacts__form {
+  width: 470px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__social {
+  padding-right: 20px;
+}
+
+.contacts__social-columns {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.social_item {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  min-width: 235px;
+  margin: 10px 0;
+  transition: color 500ms;
+  svg {
+    margin-right: 10px;
+    fill: white;
+    width: 35px;
+    height: 50px;
+    transition: fill 500ms;
+  }
+  p {
+    align-self: center;
+    transition: color 500ms, filter 500ms;
+  }
+  &:hover {
+    svg {
+      fill: blue;
+      filter: hue-rotate(180deg);
+    }
+    p {
+      color: blue;
+      filter: hue-rotate(180deg);
+    }
+  }
+}
+
+.contacts__form {
+  height: 360px;
+  justify-content: space-between;
+}
+
+.contacts__form__input {
+  width: 457px;
+  height: 50px;
+  border: 1px solid grey;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  border-radius: 5px;
+  &::-moz-placeholder {
+    font-family: "Brandon Grotesque Medium", sans-serif;
+    font-size: 18px;
+    color: #bbb;
+  }
+  &::-webkit-input-placeholder {
+    font-family: "Brandon Grotesque Medium", sans-serif;
+    font-size: 18px;
+    color: #bbb;
+  }
+  &:-ms-input-placeholder {
+    font-family: "Brandon Grotesque Medium", sans-serif;
+    font-size: 18px;
+    color: #bbb;
+  }
+  &:-moz-placeholder {
+    font-family: "Brandon Grotesque Medium", sans-serif;
+    font-size: 18px;
+    color: #bbb;
+  }
+  &[name="uname"] {
+    background-color: transparent;
+  }
+}
+
+.input-heigh {
+  height: 212px;
+}
+
+.text-16 {
+  font: 16px 'Brandon Grotesque Medium';
+}
