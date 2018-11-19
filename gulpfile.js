@@ -61,8 +61,8 @@ gulp.task('build', ['scssToCss', 'pugToHTML', 'clean', 'img'], function() {
     ])
         .pipe(gulp.dest('dist/css'))
 
-    var buildFonts = gulp.src('app/font/**/*') // шрифти
-        .pipe(gulp.dest('dist/font'))
+    var buildFonts = gulp.src('app/fonts/**/*') // шрифти
+        .pipe(gulp.dest('dist/fonts'))
 
     var buildJs = gulp.src('app/js/**/*') // скрипти
         .pipe(gulp.dest('dist/js'))
